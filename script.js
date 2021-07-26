@@ -3,6 +3,7 @@ function Enviado()
   alert("Seu Formulario foi enviado com sucesso!");
 }
 
+/* Transforma o num do CPF para o formato: XXX.XXX.XXX-XX */
 function formataCPF(cpf) {
   const elementoAlvo = cpf
   const cpfAtual = cpf.value   
@@ -14,9 +15,10 @@ function formataCPF(cpf) {
           return argumento1 + '.' + argumento2 + '.' + argumento3 + '-' + argumento4;
   })  
   elementoAlvo.value = cpfAtualizado; 
-  }
+ }
 
-  function formataCEL(cel) {
+/* Transforma o num do celular para o formato: (XX)XXXXX-XXXX */  
+function formataCEL(cel) {
     const elementoAlvo = cel
     const celAtual = cel.value   
     
@@ -27,9 +29,10 @@ function formataCPF(cpf) {
             return '(' + argumento1 + ')' + ' ' + argumento2 + '-' + argumento3;
     })  
     elementoAlvo.value = celAtualizado; 
-    }
+ }
 
-    function formataTEL(tel) {
+/* Transforma o num do CPF para o formato: XXX.XXX.XXX-XX */
+function formataTEL(tel) {
       const elementoAlvo = tel
       const telAtual = tel.value   
       
@@ -40,9 +43,10 @@ function formataCPF(cpf) {
               return '(' + argumento1 + ')' + ' ' + argumento2 + '-' + argumento3;
       })  
       elementoAlvo.value = telAtualizado; 
-      }
+ }
 
-      function formataCEP(cep) {
+/* Transforma o num do CEP para o formato: XXXXX-XXX */ 
+function formataCEP(cep) {
         const elementoAlvo = cep
         const cepAtual = cep.value   
       
@@ -53,7 +57,6 @@ function formataCPF(cpf) {
               return  argumento1  + '-' + argumento2  ;
       })  
       elementoAlvo.value = cepAtualizado; 
+}
 
-      }
-  
   

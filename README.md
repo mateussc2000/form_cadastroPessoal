@@ -8,6 +8,7 @@ Funcionalidades:
 2- O formulario eh responsivo, ao clicar sobre um dos itens a preencher ha uma leve mudanca de transicao da label + a cor.
 
 3- Nos campos de "CPF,CEP e Telefone" ocorrem a formatacao automatica do campo para a qtd exata de digitos
+atraves da expressoes regulares do javascript
 
 4- A data eh selecionada atraves de um calendario
 
@@ -26,3 +27,5 @@ Links de pesquisas e sites que encontrei durante o desenvolvimento:
 4-https://tableless.github.io/iniciantes/manual/js/inserindo-js.html
 
 5-https://www.alura.com.br/artigos/formatando-cpf-com-ajuda-das-expressoes-regulares?gclid=Cj0KCQjwl_SHBhCQARIsAFIFRVVFat0OWldsupt0P3QQnz7TJKOiqlykNmvws0_n-pC4cYzA4McyjosaAoZiEALw_wcB
+
+6-http://www.devwilliam.com.br/javascript/validar-formulario-usando-javascript 

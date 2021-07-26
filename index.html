@@ -14,7 +14,7 @@
         </div>
 
       <div class="box">
-        <form action="">
+        <form action="" id="form-contato">
             <fieldset id="grupoPrincipal">
                 
                 <legend><b>Formulario Pessoal</b></legend>  
@@ -56,28 +56,28 @@
                       <div id="check">
                           <label for="check">Sexo:</label>
                           
-                          <input type="radio" id="masculino" name="genero" value="masculino"> 
+                          <input type="radio" id="masculino" name="genero" value="masculino" required> 
                           <label for="masculino">M</label>
-                          <input type="radio" id="feminino"  name="genero" value="feminino"> 
+                          <input type="radio" id="feminino"  name="genero" value="feminino" required> 
                           <label for="feminino">F</label>
                        </div>
    
                        
                        <div id="dataNasc" class="inputBox">
-                           <input type="date", name="data_nascimento", id="data_nascimento" >
+                           <input type="date", name="data_nascimento", id="data_nascimento" required>
                            <label for="data_nascimento"><b>Data de Nascimento</b></label>
                        </div>
                    </fieldset>    
                 
                 <fieldset class="grupo">  
                     <div class="inputBox">
-                        <input type="text" name="cpf" class="inputUser" onblur="formataCPF(this)" required>
+                        <input type="text" name="cpf" id="cpf" class="inputUser" onblur="formataCPF(this)" required>
                         <label for="cpf" class="labelInput">CPF:</label>
                     </div>
                     <br><br>
                     
                     <div class="inputBox">
-                        <input type="text" name="rg" class="inputUser" required/>
+                        <input type="text" name="rg" id="rg" class="inputUser" required/>
                         <label for="rg" class="labelInput">RG:</label>
                     </div>
                     <br><br>
@@ -124,7 +124,7 @@
 
                     <div class="inputBox">
                         <label for="estado">Estado:</label>
-                        <select id="estado">
+                        <select id="estado" required>
                             <option selected disabled value="">Selecione</option>
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
@@ -161,7 +161,7 @@
 
 
   
-                 <button class="botao" onclick="Enviado()" type="submit" id="submit">Enviar</button>
+                 <button class="botao" type="submit" onclick="Enviado()" id="submit">Enviar</button>
                  
             </fieldset>
         </form>
