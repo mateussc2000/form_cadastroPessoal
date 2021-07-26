@@ -1,0 +1,170 @@
+<html>
+    <head>
+           <title>Cadastro Virtual</title> 
+           <link rel="stylesheet" href="reset.css">
+           <link rel="stylesheet" href="style.css" media="" />
+           <script type="text/javascript" src="script.js"></script>
+    </head>
+           
+            
+    <body>
+        <div class="mensagemInicio">
+            <h1 id="titulo">Registre-se agora</h1>
+            <p  id="subtitulo">Preencha o formulario abaixo</p>  
+        </div>
+
+      <div class="box">
+        <form action="">
+            <fieldset id="grupoPrincipal">
+                
+                <legend><b>Formulario Pessoal</b></legend>  
+                <br/>
+                   
+               
+                <fieldset class="grupo">
+
+                    <div class="inputBox">
+                        <input type="text" name="nome" id="nome" class="inputUser" required>
+                        <label for="nome" class="labelInput">Nome:</label>
+                    </div>
+                    <br><br>
+                    
+               
+                    <div class="inputBox">
+                        <input type="email" name="email" id="email" class="inputUser" required>
+                        <label for="email" class="labelInput">Email:</label>
+                    </div>
+                    <br><br>
+                </fieldset>
+                
+                <fieldset class="grupo">  
+                    <div class="inputBox">
+                        <input type="tel" id="cellphone" name="cellphone" class="inputUser" onblur="formataCEL(this)" required>
+                        <label for="cellphone" class="labelInput">Telefone Celular:</label>
+                    </div>
+                    <br><br>
+
+                    <div class="inputBox">
+                        <input type="tel" id="phone" name="phone" class="inputUser" onblur="formataTEL(this)" required>
+                        <label for="phone" class="labelInput">Telefone Fixo:</label>
+                    </div>
+                    <br><br>    
+                 </fieldset>      
+                
+                 
+                    <fieldset id="datacheck">
+                      <div id="check">
+                          <label for="check">Sexo:</label>
+                          
+                          <input type="radio" id="masculino" name="genero" value="masculino"> 
+                          <label for="masculino">M</label>
+                          <input type="radio" id="feminino"  name="genero" value="feminino"> 
+                          <label for="feminino">F</label>
+                       </div>
+   
+                       
+                       <div id="dataNasc" class="inputBox">
+                           <input type="date", name="data_nascimento", id="data_nascimento" >
+                           <label for="data_nascimento"><b>Data de Nascimento</b></label>
+                       </div>
+                   </fieldset>    
+                
+                <fieldset class="grupo">  
+                    <div class="inputBox">
+                        <input type="text" name="cpf" class="inputUser" onblur="formataCPF(this)" required>
+                        <label for="cpf" class="labelInput">CPF:</label>
+                    </div>
+                    <br><br>
+                    
+                    <div class="inputBox">
+                        <input type="text" name="rg" class="inputUser" required/>
+                        <label for="rg" class="labelInput">RG:</label>
+                    </div>
+                    <br><br>
+                 </fieldset>
+                    
+
+                 
+                    
+                <!-- enderecos -->
+                <fieldset class="grupo"> 
+                    <div class="inputBox">
+                        <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                        <label for="endereco" class="labelInput">Endereço:</label>
+                    </div>
+                    <br><br>
+
+                    <div class="inputBox">
+                        <input type="text" name="numero" id="numero" class="inputUser"required>
+                        <label for="numero" class="labelInput">Número /     Complemento:</label>
+                    </div>
+                    <br><br>
+                </fieldset> 
+                
+                <fieldset class="grupo"> 
+                    <div class="inputBox">
+                        <input type="text" name="bairro" id="bairro" class="inputUser" required>
+                        <label for="bairro" class="labelInput">Bairro:</label>
+                    </div>
+                    <br><br>
+
+                    <div class="inputBox">
+                        <input type="text" name="cep" id="cep" class="inputUser" onblur="formataCEP(this)" required>
+                        <label for="cep" class="labelInput">CEP:</label>
+                    </div>
+                    <br><br>
+                </fieldset>
+                    
+                 <fieldset class="grupo">
+                    <div class="inputBox">
+                        <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                        <label for="cidade" class="labelInput">Cidade:</label>
+                    </div>
+                    <br><br>
+
+                    <div class="inputBox">
+                        <label for="estado">Estado:</label>
+                        <select id="estado">
+                            <option selected disabled value="">Selecione</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option>
+                        </select>
+                    </div>
+                    <br><br>
+                </fieldset>   
+
+
+  
+                 <button class="botao" onclick="Enviado()" type="submit" id="submit">Enviar</button>
+                 
+            </fieldset>
+        </form>
+    </div>            
+</body>
+</html>
